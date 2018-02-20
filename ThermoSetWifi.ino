@@ -147,7 +147,7 @@ void outputDACval(int val) {
   // send two dummy bits
   clockDAC();
   clockDAC();
-  // load data into ADC shift register
+  // load data into DAC shift register
   digitalWrite(PIN_CSN, HIGH);
   delayMicroseconds(DAC_WAIT);
   digitalWrite(PIN_CSN, LOW);
